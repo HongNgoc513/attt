@@ -16,7 +16,7 @@ export default function RegisterPage() {
 
     try {
       const response = await fetch(
-        "/api/register",
+        "https://attt-kappa.vercel.app/api/register",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
