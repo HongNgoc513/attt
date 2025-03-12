@@ -1,0 +1,415 @@
+@import "tailwindcss";
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FF5722;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 40px;
+    font-size: 24px;
+}
+
+    .header img {
+        height: 40px;
+    }
+
+    .header a {
+        color: #FF5722;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    width: 1000px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    flex: 1.2;
+    background-color: #FF5722;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+    .left-section img {
+        width: 300px;
+        margin-bottom: 0px; /* Thêm khoảng cách giữa logo và chữ Shopee */
+    }
+
+    .left-section h1 {
+        font-size: 50px;
+        color: white;
+        font-weight: 100;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px; /* Khoảng cách giữa chữ Shopee và đoạn mô tả */
+    }
+
+    .left-section p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+.right-section {
+    flex: 0.8;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+    .right-section h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #FF5722;
+    }
+.social-login {
+    display: flex;
+    gap: 35px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+    button img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+}
+
+    .login-form button:hover {
+        background-color: #E64A19;
+    }
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px; /* Khoảng cách giữa các phần tử */
+    margin-top: 20px;
+    width: 100%;
+}
+
+.login-options a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 14px;
+    white-space: nowrap; /* Ngăn chữ xuống dòng */
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap; /* Giữ chữ "HOẶC" trên một dòng */
+    margin-top: 20px;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0 10px;
+    width: 50px; /* Điều chỉnh độ dài đường kẻ */
+}
+
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+}
+
+    .social-login button {
+        width: 48%;
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+
+    .social-login .facebook {
+        background-color: white;
+        color: black;
+        justify-content: center;
+    }
+
+    .social-login .google {
+        background-color: white;
+        color: black;
+        justify-content: center;
+    }
+
+.qr-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+    .qr-login a {
+        color: #FF5722;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .qr-login img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+.qr {
+    display: flex;
+    justify-content: space-between;
+}
+/*footer*/
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+    .footer-column h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+            .footer-column ul li a {
+                text-decoration: none;
+                color: #333;
+            }
+
+                .footer-column ul li a:hover {
+                    color: #FF5722;
+                }
+
+.payment-methods img,
+.shipping-methods img,
+.app-download img {
+    width: 50px;
+    margin: 5px;
+}
+
+.app-download {
+    display: flex;
+    align-items: center;
+}
+
+    .app-download div {
+        margin-left: 10px;
+    }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-bottom-details {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+    .footer-links li {
+        margin: 0 15px;
+    }
+
+        .footer-links li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+            .footer-links li a:hover {
+                color: #FF5722;
+            }
+
+.footer-certificates {
+    margin: 10px 0;
+}
+
+    .footer-certificates img {
+        width: 200px; /* Đảm bảo tất cả ảnh có cùng chiều rộng */
+        height: 100px; /* Đặt chiều cao cố định để ảnh đồng nhất */
+        object-fit: contain; /* Đảm bảo giữ tỷ lệ ảnh mà không bị cắt méo */
+        margin: 0 10px; /* Tạo khoảng cách giữa các ảnh */
+    }
+
+
+.tooltip-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.tooltip {
+    position: relative; /* Thêm để đảm bảo vị trí đúng */
+    background-color: #FFF8DC; /* Màu nền vàng nhạt */
+    border: 2px solid #FFC107; /* Viền vàng */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #FFC107; /* Màu chữ vàng */
+    font-weight: bold;
+    z-index: 2; /* Đảm bảo tooltip nằm trên QR code */
+    left: 10px; /* Đẩy tooltip vào bên phải */
+    top: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 10px;
+    height: 41px;
+    z-index:4;
+}
+
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -23px; /* Đẩy mũi tên ra ngoài viền */
+        transform: translateY(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent transparent #FFC107; /* Tạo mũi tên vàng */
+    }
+
+    /* Đảm bảo không có mũi tên dư thừa */
+    .tooltip::before {
+        content: none !important;
+    }
+
+.qr-code {
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    position: relative;
+    left: 17px;
+    top: -6px;
+}
+
+.tooltip-container .overlay {
+    position: absolute;
+    background-color: white;
+    transform: rotate(45deg);
+    width: 53px;
+    height: 45px;
+    top: 38px;
+    left: 210px;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 3;
+    pointer-events: none;
+}
+
+ 
