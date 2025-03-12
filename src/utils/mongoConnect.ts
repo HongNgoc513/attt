@@ -1,6 +1,6 @@
 import mongoose, { ConnectOptions } from 'mongoose';
 
-const MONGO_URL = process.env.MONGO_PUBLIC_URL || '';
+const MONGO_URL = 'mongodb://mongo:FCDPQIwNxTOrYPdvcInCpRZScoBKWHDa@nozomi.proxy.rlwy.net:14841'
 
 if (!MONGO_URL) {
   console.error('❌ Không tìm thấy URL kết nối MongoDB');
